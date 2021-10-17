@@ -63,9 +63,21 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 
 | Azure Resource | Service Tier | Monthly Cost |
 | ------------ | ------------ | ------------ |
-| *Azure Postgres Database* |     |              |
-| *Azure Service Bus*   |         |              |
-| ...                   |         |              |
+| *Azure Postgres Database* | General purpose    | $154.14 USD    |
+| *Azure Service Plan*   | B1   | $13.14 USD      |
+| *Azure Storage Account*   | Standard   | $21.84 USD      |
+| *Service Bus Namespace  *   | Basic   | $0.05 USD      |
+| *Twilio SendGrid*    | Free 100 - Monthly    | Free      |
+| *Total*    | ------    | $189.87 USD      |
+
 
 ## Architecture Explanation
-This is a placeholder section where you can provide an explanation and reasoning for your architecture selection for both the Azure Web App and Azure Function.
+Thoughtful and indepth analysis formed the decisions of each archetecture choosen below.
+
+- Peformance: Seperating background tasks from The main processes allows for more peformant services that can be scalled independently of each other. This allowed the team to manage the frontdoor website and the messaging facility independently without each affecting the other.
+
+- **_Scalability_**: The ability to scale the webapp up/down per need is one great feature of Azure App Service. This formed the basics for which it was chosen as a preferred choice for hosting the upcoming Tech Conf 2022 website.
+
+- **_Cost Efficient_**: By leveraging on Azure App Service Plan, we are able to host both the webapp front door website and the Function App messaging platform on the same Service Plan. This helped to reduce the overall cost of running the app to an acceptable minimum.
+
+- **_Availability_**: Azure App Service provisions high infrastructure efficient for handling peak loads with little to no latency. This made it a wonderful choice for hosting the Tech Conf 2022 website that demands zero timeout throughout the registration and notification phase.
