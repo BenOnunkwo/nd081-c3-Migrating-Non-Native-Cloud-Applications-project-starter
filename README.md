@@ -66,9 +66,10 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 | *Azure Postgres Database* | General purpose    | $154.14 USD    |
 | *Azure Service Plan*   | B1   | $13.14 USD      |
 | *Azure Storage Account*   | Standard   | $21.84 USD      |
-| *Service Bus Namespace  *   | Basic   | $0.05 USD      |
+| *Azure Funcrtion App*   | Consumption   | $0.00 USD      |
+| *Service Bus Namespace*   | Basic   | $0.05 USD      |
 | *Twilio SendGrid*    | Free 100 - Monthly    | Free      |
-| *Total*    | ------    | $189.87 USD      |
+| *Total*    | ------    | $189.17 USD      |
 
 
 ## Architecture Explanation
